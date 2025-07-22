@@ -92,7 +92,7 @@ const Footer = () => {
           </ContactInfo>
           
           <Copyright>
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()} YunethPerera. All rights reserved.
           </Copyright>
         </FooterContent>
       </div>

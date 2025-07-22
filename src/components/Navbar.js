@@ -66,7 +66,7 @@ const Navbar = ({ toggleTheme, theme }) => {
     <NavbarContainer>
       <div className="container">
         <NavContent>
-          <Logo href="#">Portfolio</Logo>
+          <Logo href="#">YP</Logo>
           <NavLinks>
             <NavLink>
               <a href="#home">Home</a>

@@ -123,7 +123,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I'm [Your Name]
+          Hi, I'm Yuneth Perera
         </Title>
         <Subtitle
           initial={{ opacity: 0, y: 50 }}
@@ -133,10 +133,10 @@ const Home = () => {
           Software Engineering Graduate
         </Subtitle>
         <SocialIcons>
-          <IconLink href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <IconLink href="https://github.com/Yuneth" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </IconLink>
-          <IconLink href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <IconLink href="https://linkedin.com/in/yunethperera" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </IconLink>
           <IconLink href="mailto:youremail@example.com">

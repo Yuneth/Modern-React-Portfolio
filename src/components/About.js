@@ -165,28 +165,29 @@ const About = () => {
               </motion.h3>
               
               <TimelineItem>
-                <TimelineDate>2020 - 2023</TimelineDate>
-                <TimelineTitle>Bachelor's in Software Engineering</TimelineTitle>
+                <TimelineDate>2023 - 2024</TimelineDate>
+                <TimelineTitle>Comprehensive Master Java Developer </TimelineTitle>
                 <TimelineDescription>
-                  Graduated with honors from [Your University], specializing in full-stack development.
+                  Institute of Software Engineering (IJSE)
+                </TimelineDescription>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineDate>2020 - 2023</TimelineDate>
+                <TimelineTitle>BEng (Hons) in Software Engineering</TimelineTitle>
+                <TimelineDescription>
+                  Graduated with honors from London Metropolitan University, specializing in full-stack development.
                 </TimelineDescription>
               </TimelineItem>
               
               <TimelineItem>
-                <TimelineDate>2018 - 2020</TimelineDate>
-                <TimelineTitle>Higher National Diploma</TimelineTitle>
+                <TimelineDate>2020 - 2022</TimelineDate>
+                <TimelineTitle>Pearson BTEC Higher National Diploma</TimelineTitle>
                 <TimelineDescription>
                   Completed HND in Computing with distinction, focusing on software development.
                 </TimelineDescription>
               </TimelineItem>
               
-              <TimelineItem>
-                <TimelineDate>2015 - 2018</TimelineDate>
-                <TimelineTitle>Diploma in IT</TimelineTitle>
-                <TimelineDescription>
-                  Gained foundational knowledge in programming and computer systems.
-                </TimelineDescription>
-              </TimelineItem>
             </Timeline>
           </AboutText>
         </AboutContent>

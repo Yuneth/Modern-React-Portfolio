@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import project1Photo from '../assets/images/project1.png';
+import project3Photo from '../assets/images/project3.PNG';
 
 const ProjectsContainer = styled.section`
   background: ${({ theme }) => theme.body};
@@ -98,30 +100,31 @@ const ProjectLink = styled.a`
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
-      techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Stripe API'],
-      backendLink: 'https://github.com/yourusername/ecommerce-backend',
-      frontendLink: 'https://github.com/yourusername/ecommerce-frontend',
+      title: 'Microfinance Credit Scoring & Lending Portal',
+      description: 'A secure full-stack system for loan scoring, customer onboarding, and admin-controlled credit evaluation using JWT-based access.',
+      techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Material UI'],
+      backendLink: 'https://github.com/Yuneth/FundFlow-Backend',
+      frontendLink: 'https://github.com/Yuneth/FundFlow-Frontend',
       demoLink: 'https://yourecommerceapp.com',
-      image: 'https://via.placeholder.com/600x400?text=E-Commerce+Platform',
+      image: project1Photo,
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team functionality.',
-      techStack: ['React.js', 'Node.js', 'MongoDB', 'Socket.io'],
-      backendLink: 'https://github.com/yourusername/taskapp-backend',
-      frontendLink: 'https://github.com/yourusername/taskapp-frontend',
+      title: 'Cleaning Service Management System',
+      description: 'Booking and operations platform for cleaning services with JWT auth, dashboard metrics, and form validation.',
+      techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Material UI', 'Formik & Yup'],
+      backendLink: 'https://github.com/Yuneth/CSMS-Backend',
+      frontendLink: 'https://github.com/Yuneth/CSMS-Frontend',
       demoLink: 'https://yourtaskapp.com',
-      image: 'https://via.placeholder.com/600x400?text=Task+Management+App',
+      image: project1Photo,
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website built with React and styled-components.',
-      techStack: ['React.js', 'Styled Components', 'Framer Motion'],
-      frontendLink: 'https://github.com/yourusername/portfolio',
+      title: 'Realtime Chatroom Application',
+      description: 'Instant messaging app with WebSocket for real-time bidirectional communication and live updates.',
+      techStack: ['React.js', 'Spring Boot', 'WebSocket'],
+      backendLink: 'https://github.com/Yuneth/ChatroomApp_Backend',
+      frontendLink: 'https://github.com/Yuneth/ChatroomApp_Frontend',
       demoLink: 'https://yourportfolio.com',
-      image: 'https://via.placeholder.com/600x400?text=Portfolio+Website',
+      image: project3Photo,
     },
   ];
 
