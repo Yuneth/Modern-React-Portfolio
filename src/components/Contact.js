@@ -138,7 +138,7 @@ const Contact = () => {
               </ContactIcon>
               <ContactText>
                 <h4>Email</h4>
-                <a href="mailto:youremail@example.com">youremail@example.com</a>
+                <a href="mailto:youremail@example.com">yunethmail@example.com</a>
               </ContactText>
             </ContactItem>
             
@@ -148,7 +148,7 @@ const Contact = () => {
               </ContactIcon>
               <ContactText>
                 <h4>Phone</h4>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+1234567890">+94 (234) 567-890</a>
               </ContactText>
             </ContactItem>
             
@@ -158,7 +158,7 @@ const Contact = () => {
               </ContactIcon>
               <ContactText>
                 <h4>Location</h4>
-                <p>Your City, Country</p>
+                <p>Panadura, Sri Lanka</p>
               </ContactText>
             </ContactItem>
           </ContactInfo>
