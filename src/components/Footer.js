@@ -84,10 +84,10 @@ const Footer = () => {
           
           <ContactInfo>
             <ContactItem href="mailto:youremail@example.com">
-              <HiOutlineMail /> youremail@example.com
+              <HiOutlineMail /> yunethemail@example.com
             </ContactItem>
             <ContactItem href="tel:+1234567890">
-              <BsFillTelephoneFill /> +1 (234) 567-890
+              <BsFillTelephoneFill /> +94 (234) 567-890
             </ContactItem>
           </ContactInfo>
           

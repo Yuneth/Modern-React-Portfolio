@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import project1Photo from '../assets/images/project1.png';
 import project3Photo from '../assets/images/project3.PNG';
+import project4Photo from '../assets/images/project4.PNG';
 
 const ProjectsContainer = styled.section`
   background: ${({ theme }) => theme.body};
@@ -125,6 +126,15 @@ const Projects = () => {
       frontendLink: 'https://github.com/Yuneth/ChatroomApp_Frontend',
       demoLink: 'https://yourportfolio.com',
       image: project3Photo,
+    },
+    {
+      title: 'Point of Sale System (POS)',
+      description: 'Implemented secure authentication using Spring Security and JWT. Features include inventory management, category-based item organization, and sales processing. ',
+      techStack: ['React.js', 'Spring Boot', 'MySQL', 'JWT'],
+      backendLink: 'https://github.com/Yuneth/POS-Backend',
+      frontendLink: 'https://github.com/Yuneth/POS-Frontend',
+      demoLink: 'https://yourportfolio.com',
+      image: project4Photo,
     },
   ];
 
