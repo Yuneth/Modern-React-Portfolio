@@ -139,7 +139,7 @@ const Home = () => {
           <IconLink href="https://linkedin.com/in/yunethperera" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </IconLink>
-          <IconLink href="mailto:youremail@example.com">
+          <IconLink href="mailto:yunethperera987@gmail.com">
             <HiOutlineMail />
           </IconLink>
           <IconLink href="#resume">
