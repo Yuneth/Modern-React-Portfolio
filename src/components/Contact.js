@@ -138,7 +138,7 @@ const Contact = () => {
               </ContactIcon>
               <ContactText>
                 <h4>Email</h4>
-                <a href="mailto:youremail@example.com">yunethmail@example.com</a>
+                <a href="mailto:yunethperera987@gmail.com">yunethperera987@gmail.com</a>
               </ContactText>
             </ContactItem>
             
@@ -148,7 +148,7 @@ const Contact = () => {
               </ContactIcon>
               <ContactText>
                 <h4>Phone</h4>
-                <a href="tel:+1234567890">+94 (234) 567-890</a>
+                <a href="tel:+94767866584">+94 (76) 7 866 584</a>
               </ContactText>
             </ContactItem>
             

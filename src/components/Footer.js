@@ -65,10 +65,10 @@ const Footer = () => {
       <div className="container">
         <FooterContent>
           <SocialLinks>
-            <SocialLink href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <SocialLink href="https://github.com/Yuneth" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </SocialLink>
-            <SocialLink href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <SocialLink href="https://linkedin.com/in/yunethperera" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </SocialLink>
             <SocialLink href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
@@ -83,11 +83,11 @@ const Footer = () => {
           </SocialLinks>
           
           <ContactInfo>
-            <ContactItem href="mailto:youremail@example.com">
-              <HiOutlineMail /> yunethemail@example.com
+            <ContactItem href="mailto:yunethperera987@gmail.com">
+              <HiOutlineMail /> yunethperera987@gmail.com
             </ContactItem>
-            <ContactItem href="tel:+1234567890">
-              <BsFillTelephoneFill /> +94 (234) 567-890
+            <ContactItem href="tel:+94767866584">
+              <BsFillTelephoneFill /> +94 (76) 7 866 584
             </ContactItem>
           </ContactInfo>
           
