@@ -5,6 +5,8 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import project1Photo from '../assets/images/project1.png';
 import project3Photo from '../assets/images/project3.PNG';
 import project4Photo from '../assets/images/project4.PNG';
+import project5Photo from '../assets/images/project5.png';
+import project6Photo from '../assets/images/project6.png';
 
 const ProjectsContainer = styled.section`
   background: ${({ theme }) => theme.body};
@@ -106,7 +108,7 @@ const Projects = () => {
       techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Material UI'],
       backendLink: 'https://github.com/Yuneth/FundFlow-Backend',
       frontendLink: 'https://github.com/Yuneth/FundFlow-Frontend',
-      demoLink: 'https://yourecommerceapp.com',
+      //demoLink: 'Demo Link',
       image: project1Photo,
     },
     {
@@ -115,7 +117,7 @@ const Projects = () => {
       techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Material UI', 'Formik & Yup'],
       backendLink: 'https://github.com/Yuneth/CSMS-Backend',
       frontendLink: 'https://github.com/Yuneth/CSMS-Frontend',
-      demoLink: 'https://yourtaskapp.com',
+      //demoLink: 'Demo Link',
       image: project1Photo,
     },
     {
@@ -124,7 +126,7 @@ const Projects = () => {
       techStack: ['React.js', 'Spring Boot', 'WebSocket'],
       backendLink: 'https://github.com/Yuneth/ChatroomApp_Backend',
       frontendLink: 'https://github.com/Yuneth/ChatroomApp_Frontend',
-      demoLink: 'https://yourportfolio.com',
+      //demoLink: 'Demo Link',
       image: project3Photo,
     },
     {
@@ -133,8 +135,26 @@ const Projects = () => {
       techStack: ['React.js', 'Spring Boot', 'MySQL', 'JWT'],
       backendLink: 'https://github.com/Yuneth/POS-Backend',
       frontendLink: 'https://github.com/Yuneth/POS-Frontend',
-      demoLink: 'https://yourportfolio.com',
+      //demoLink: 'Demo Link',
       image: project4Photo,
+    },
+    {
+      title: 'React Portfolio - Software Engineer',
+      description: 'A modern, responsive portfolio website built with React.js featuring dark/light mode toggle, animated components, and a clean UI to showcase your skills, projects, and professional journey as a Software Engineering graduate.',
+      techStack: ['React.js', 'Spring Boot', 'MySQL', 'JWT'],
+      //backendLink: 'https://github.com/Yuneth/POS-Backend',
+      frontendLink: 'https://github.com/Yuneth/Modern-React-Portfolio',
+      //demoLink: 'Demo Link',
+      image: project6Photo,
+    },
+    {
+      title: 'Doctor Appointment System',
+      description: 'A web-based application designed to facilitate the scheduling and management of doctor appointments. The system allows patients to book appointments with doctors and manage their schedules efficiently. ',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'phpMyAdmin'],
+      //backendLink: 'project Link',
+      //frontendLink: 'project Link',
+      //demoLink: 'Demo Link',
+      image: project5Photo,
     },
   ];
 
