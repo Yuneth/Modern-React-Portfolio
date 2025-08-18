@@ -7,6 +7,7 @@ import project3Photo from '../assets/images/project3.PNG';
 import project4Photo from '../assets/images/project4.PNG';
 import project5Photo from '../assets/images/project5.png';
 import project6Photo from '../assets/images/project6.png';
+import project7Photo from '../assets/images/project7.jpg';
 
 const ProjectsContainer = styled.section`
   background: ${({ theme }) => theme.body};
@@ -103,6 +104,15 @@ const ProjectLink = styled.a`
 const Projects = () => {
   const projects = [
     {
+      title: 'Asclepius Plastic Surgery Website',
+      description: 'UI Design - A modern, responsive website for Asclepius plastic surgery practice, showcasing services, before/after gallery, patient testimonials, and practice information.',
+      techStack: ['HTML5', 'CSS3', 'JavaScript'],
+      //backendLink: 'backend Link',
+      frontendLink: 'https://github.com/Yuneth/Asclepius-Plastic-Surgeon',
+      //demoLink: 'Demo Link',
+      image: project7Photo,
+    },
+    {
       title: 'Microfinance Credit Scoring & Lending Portal',
       description: 'A secure full-stack system for loan scoring, customer onboarding, and admin-controlled credit evaluation using JWT-based access.',
       techStack: ['Spring Boot', 'React.js', 'MySQL', 'JWT', 'Material UI'],
@@ -154,6 +164,7 @@ const Projects = () => {
       //backendLink: 'project Link',
       //frontendLink: 'project Link',
       //demoLink: 'Demo Link',
+      projectLink:'https://github.com/Yuneth/Doctor_Appointment_System',
       image: project5Photo,
     },
   ];
@@ -195,6 +206,11 @@ const Projects = () => {
                   {project.demoLink && (
                     <ProjectLink href={project.demoLink} target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt /> Live Demo
+                    </ProjectLink>
+                  )}
+                  {project.projectLink && (
+                    <ProjectLink href={project.projectLink} target="_blank" rel="noopener noreferrer">
+                      <FaGithub /> ProjectLink
                     </ProjectLink>
                   )}
                 </ProjectLinks>
