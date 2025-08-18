@@ -91,4 +91,4 @@ portfolio/
 MIT License - Feel free to use and modify for your own portfolio.
 
 ## UI Design
-![Alt text] (https://github.com/Yuneth/Modern-React-Portfolio/blob/c9c8f97abfa277bbfde9bb1d27032258b889c3ee/Image1.jpg)
+![Alt text] (https://github.com/Yuneth/Modern-React-Portfolio/blob/e0e03a49bfe434191f2e87f6e183f032f778af4a/Image1.jpg?raw=true)
