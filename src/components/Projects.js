@@ -28,8 +28,8 @@ import project3_1Photo from "../assets/images/project3-1.PNG";
 import project4Photo from "../assets/images/project4.PNG";
 import project4_1Photo from "../assets/images/project4-1.png";
 
-
 import project5Photo from "../assets/images/project5.png";
+
 import project6Photo from "../assets/images/project6.png";
 import project6_1Photo from "../assets/images/project6-1.png";
 import project6_2Photo from "../assets/images/project6-2.png";
@@ -62,7 +62,6 @@ import project7_8Photo from "../assets/images/project7-8.jpg";
 import project7_9Photo from "../assets/images/project7-9.jpg";
 import project7_10Photo from "../assets/images/project7-10.jpg";
 import project7_11Photo from "../assets/images/project7-11.jpg";
-
 
 const ProjectsContainer = styled.section`
   background: ${({ theme }) => theme.body};
@@ -495,11 +494,7 @@ const Projects = () => {
       backendLink: "https://github.com/Yuneth/CSMS-Backend",
       frontendLink: "https://github.com/Yuneth/CSMS-Frontend",
       image: project1Photo,
-      screenshots: [
-        project1Photo,
-        project1_1Photo,
-        project1_2Photo,
-      ],
+      screenshots: [project1Photo, project1_1Photo, project1_2Photo],
       features: [
         "Secure user registration",
         "Login with JWT authentication",
@@ -519,10 +514,7 @@ const Projects = () => {
       backendLink: "https://github.com/Yuneth/ChatroomApp_Backend",
       frontendLink: "https://github.com/Yuneth/ChatroomApp_Frontend",
       image: project3Photo,
-      screenshots: [
-        project3Photo,
-        project3_1Photo,
-      ],
+      screenshots: [project3Photo, project3_1Photo],
       features: [
         "Real-time messaging",
         "User presence indicators",
@@ -542,10 +534,7 @@ const Projects = () => {
       backendLink: "https://github.com/Yuneth/POS-Backend",
       frontendLink: "https://github.com/Yuneth/POS-Frontend",
       image: project4Photo,
-      screenshots: [
-        project4Photo,
-        project4_1Photo,
-      ],
+      screenshots: [project4Photo, project4_1Photo],
       features: [
         "Inventory management",
         "Sales processing",
@@ -584,7 +573,6 @@ const Projects = () => {
         project6_16Photo,
         project6_17Photo,
         project6_18Photo,
-        
       ],
       features: [
         "Dark/Light Mode Toggle - User preference theme switching",
@@ -607,9 +595,7 @@ const Projects = () => {
       techStack: ["HTML", "CSS", "JavaScript", "PHP", "phpMyAdmin"],
       projectLink: "https://github.com/Yuneth/Doctor_Appointment_System",
       image: project5Photo,
-      screenshots: [
-        project5Photo,
-      ],
+      screenshots: [project5Photo],
       features: [
         "Doctor appointment scheduling",
         "Patient registration",
@@ -644,13 +630,13 @@ const Projects = () => {
   };
 
   const goToPrevImage = () => {
-    setCurrentImageIndex(prevIndex => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? selectedProject.screenshots.length - 1 : prevIndex - 1
     );
   };
 
   const goToNextImage = () => {
-    setCurrentImageIndex(prevIndex => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === selectedProject.screenshots.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -755,21 +741,29 @@ const Projects = () => {
                   </ModalImage>
 
                   {/* Screenshot Gallery */}
-                  {selectedProject.screenshots && selectedProject.screenshots.length > 0 && (
-                    <ModalSection>
-                      <SectionTitle>Screenshots</SectionTitle>
-                      <ScreenshotGallery>
-                        {selectedProject.screenshots.map((screenshot, index) => (
-                          <ScreenshotItem key={index} onClick={() => openImageViewer(index)}>
-                            <img 
-                              src={screenshot} 
-                              alt={`${selectedProject.title} screenshot ${index + 1}`} 
-                            />
-                          </ScreenshotItem>
-                        ))}
-                      </ScreenshotGallery>
-                    </ModalSection>
-                  )}
+                  {selectedProject.screenshots &&
+                    selectedProject.screenshots.length > 0 && (
+                      <ModalSection>
+                        <SectionTitle>Screenshots</SectionTitle>
+                        <ScreenshotGallery>
+                          {selectedProject.screenshots.map(
+                            (screenshot, index) => (
+                              <ScreenshotItem
+                                key={index}
+                                onClick={() => openImageViewer(index)}
+                              >
+                                <img
+                                  src={screenshot}
+                                  alt={`${selectedProject.title} screenshot ${
+                                    index + 1
+                                  }`}
+                                />
+                              </ScreenshotItem>
+                            )
+                          )}
+                        </ScreenshotGallery>
+                      </ModalSection>
+                    )}
 
                   <ModalSection>
                     <SectionTitle>Project Description</SectionTitle>
@@ -803,7 +797,8 @@ const Projects = () => {
                     <ModalSection>
                       <SectionTitle>Challenges & Solutions</SectionTitle>
                       <p>
-                        <strong>Challenges:</strong> {selectedProject.challenges}
+                        <strong>Challenges:</strong>{" "}
+                        {selectedProject.challenges}
                       </p>
                       <p>
                         <strong>Solutions:</strong> {selectedProject.solutions}
@@ -871,7 +866,9 @@ const Projects = () => {
               </NavigationButton>
               <FullscreenImage
                 src={selectedProject.screenshots[currentImageIndex]}
-                alt={`${selectedProject.title} screenshot ${currentImageIndex + 1}`}
+                alt={`${selectedProject.title} screenshot ${
+                  currentImageIndex + 1
+                }`}
               />
               <NavigationButton className="next" onClick={goToNextImage}>
                 <FaChevronRight />
