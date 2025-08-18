@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.js": "/Modern-React-Portfolio/static/js/main.d935580c.js",
+    "main.js": "/Modern-React-Portfolio/static/js/main.bde002fa.js",
     "static/media/project4.PNG": "/Modern-React-Portfolio/static/media/project4.c1a744a0f0c9c31eb9aa.PNG",
     "static/media/p1.jpg": "/Modern-React-Portfolio/static/media/p1.bb3c7e2d19c0babc663b.jpg",
     "static/media/project5.png": "/Modern-React-Portfolio/static/media/project5.83a263f39d7c87701804.png",
     "static/media/project6.png": "/Modern-React-Portfolio/static/media/project6.1229d386d90e2ab73bb0.png",
     "static/media/project3.PNG": "/Modern-React-Portfolio/static/media/project3.fcdcd1d5e47da2de1d47.PNG",
+    "static/media/project7.jpg": "/Modern-React-Portfolio/static/media/project7.e63197ecc1e5c74236f0.jpg",
     "static/media/project1.png": "/Modern-React-Portfolio/static/media/project1.1489bdd7342f77f9d062.png",
     "index.html": "/Modern-React-Portfolio/index.html",
-    "main.d935580c.js.map": "/Modern-React-Portfolio/static/js/main.d935580c.js.map"
+    "main.bde002fa.js.map": "/Modern-React-Portfolio/static/js/main.bde002fa.js.map"
   },
   "entrypoints": [
-    "static/js/main.d935580c.js"
+    "static/js/main.bde002fa.js"
   ]
 }
