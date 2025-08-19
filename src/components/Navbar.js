@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
 
 const NavbarContainer = styled.nav`
@@ -25,15 +25,30 @@ const Logo = styled.a`
   font-size: 1.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.primary};
+  text-decoration: none;
+  z-index: 1001;
 `;
 
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 
   @media (max-width: 768px) {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: ${({ theme }) => theme.cardBg};
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 `;
 
@@ -43,6 +58,8 @@ const NavLink = styled.li`
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    text-decoration: none;
+    font-size: 1.1rem;
 
     &::after {
       content: '';
@@ -58,33 +75,66 @@ const NavLink = styled.li`
     &:hover::after {
       width: 100%;
     }
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+`;
+
+const MobileMenuButton = styled.button`
+  background: transparent;
+  border: none;
+  color: ${({ theme }) => theme.text};
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
 
 const Navbar = ({ toggleTheme, theme }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <NavbarContainer>
       <div className="container">
         <NavContent>
-          <Logo href="#">YP</Logo>
-          <NavLinks>
+          <Logo href="#" onClick={closeMenu}>YP</Logo>
+          
+          <MobileMenuButton onClick={toggleMenu}>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </MobileMenuButton>
+
+          <NavLinks isOpen={isOpen}>
             <NavLink>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={closeMenu}>Home</a>
             </NavLink>
             <NavLink>
-              <a href="#about">About</a>
+              <a href="#about" onClick={closeMenu}>About</a>
             </NavLink>
             <NavLink>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={closeMenu}>Skills</a>
             </NavLink>
             <NavLink>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={closeMenu}>Projects</a>
             </NavLink>
             <NavLink>
-              <a href="#resume">Resume</a>
+              <a href="#resume" onClick={closeMenu}>Resume</a>
             </NavLink>
             <NavLink>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={closeMenu}>Contact</a>
             </NavLink>
             <ThemeToggle toggleTheme={toggleTheme} theme={theme} />
           </NavLinks>
