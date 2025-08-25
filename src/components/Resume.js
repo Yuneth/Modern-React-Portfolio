@@ -48,8 +48,8 @@ const Resume = () => {
             my full resume for more details.
           </ResumeText>
           <DownloadButton
-            href="/resume.pdf"
-            download
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            download="Yuneth Perera_CV.pdf"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
